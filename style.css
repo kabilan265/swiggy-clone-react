@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: none;
+}
+@media only screen and (max-width: 767px) {
+ html{
+  font-size: 11px;
+ }
+}
+
+@layer components {
+  .nav-link {
+    @apply cursor-pointer font-medium text-light-heading hover:text-primary transition-colors;
+  }
+}
+.img-filter{
+  filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 2px 8px);
+}
+.according-wrap{
+  grid-template-columns: 0.80fr 0.20fr;
+}
+.menu-border:not(:last-child), .cart-border{
+  border-bottom: 0.5px solid #d3d3d3;
+}
+.skelton{
+  animation: skelton-loading 1s linear infinite alternate;
+}
+@keyframes skelton-loading {
+  0%{
+    background-color: hsl(200, 20%, 70%);
+  }
+  100%{
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+.all {
+  box-shadow: 0 0 15px rgba(51, 51, 51, 0.45);
+/*   color: #447fd6; */
+}
