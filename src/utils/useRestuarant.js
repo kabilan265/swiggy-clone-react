@@ -25,4 +25,4 @@ const useRestuarant = (paramId) => {
   return [resInfo, setResInfo , fetchFailed];
 };
 
-export default userRestuarant 
+export default useRestuarant 
