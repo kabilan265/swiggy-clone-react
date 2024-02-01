@@ -11,7 +11,7 @@ export default Header = () => {
       <div className="logo-container py-3">
         <Link to="/">
           <img
-            src={swiggyLogo}
+            src="https://logosandtypes.com/wp-content/uploads/2021/01/swiggy.svg"
             className="w-[50] h-[50] cursor-pointer hover:scale-110 transition-all"
           />
         </Link>
