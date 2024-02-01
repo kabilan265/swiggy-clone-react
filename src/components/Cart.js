@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { CDN_URL } from "../utils/Constants";
-export default Cart = () => {
+const Cart = () => {
   const items = useSelector((store) => store.cart.items);
   const resDetails = useSelector((store) => store.cart.restuarantDetails);
   if (!items.length) {
@@ -75,3 +75,5 @@ export default Cart = () => {
     </div>
   );
 };
+
+export default Cart;
