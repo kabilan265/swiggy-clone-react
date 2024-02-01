@@ -1,8 +1,7 @@
 import { CDN_URL } from "../utils/Constants";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-
-export default ResCard = (prop) => {
+const ResCard  = (prop) => {
     const { resData } = prop;
     const { cloudinaryImageId, name, avgRating, cuisines, sla } = resData.info;
     return (
@@ -35,3 +34,4 @@ export const isHighlyRated = (ResCard) => {
         )
     }
 }
+export default ResCard

@@ -1,8 +1,7 @@
 import RestuarantAccordin from "./RestuarantAccordin";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
-
-export default RestuarantCategory = (props) => {
+const RestuarantCategory = (props) => {
   const { resData, showMenu, setShowIndex } = { ...props };
   const { title, itemCards } = resData?.card?.card;
   const handleClick = () => {
@@ -27,3 +26,5 @@ export default RestuarantCategory = (props) => {
     </div>
   );
 };
+
+export default RestuarantCategory 

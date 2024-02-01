@@ -14,7 +14,7 @@ import {
   faIndianRupee,
 } from "@fortawesome/free-solid-svg-icons";
 import { cartContext } from "../utils/UserContext";
-export default restaurant = () => {
+const restaurant = () => {
   const [showIndex, setShowIndex] = useState(0);
   const { resId } = useParams();
   const [resInfo, setResInfo, fetchFailed] = useRestuarant(resId);
@@ -167,3 +167,5 @@ export default restaurant = () => {
     </div>
   );
 };
+
+export default restaurant 

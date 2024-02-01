@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
-
-export default useOnlineStatus = ()=>{
+const useOnlineStatus = ()=>{
     const [isOnline, setIsOnline]=useState('true')
     useEffect(()=>{
         window.addEventListener('online',()=>{
@@ -12,3 +11,4 @@ export default useOnlineStatus = ()=>{
     },[])
     return isOnline;
 }
+export default useOnlineStatus 

@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { CDN_URL } from '../utils/Constants';
 import { useEffect, useState } from 'react';
-export default Caurosel = (props) => {
+const Caurosel = (props) => {
     const { resData } = { ...props };
     const { imageGridCards } = { ...resData };
     const [translateWidth, setTranslateWidth] = useState(0);
@@ -62,3 +62,4 @@ export default Caurosel = (props) => {
         </div>
     )
 }
+export default Caurosel;

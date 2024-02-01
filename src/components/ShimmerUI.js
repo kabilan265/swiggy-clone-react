@@ -1,4 +1,4 @@
-export default shimmer = () => {
+const shimmer = () => {
 
   return (
     <div
@@ -121,3 +121,5 @@ export default shimmer = () => {
     </div>
   );
 };
+
+export default shimmer 

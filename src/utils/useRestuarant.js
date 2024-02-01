@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { setRestuarantDetails } from "../utils/cartSlice";
 import { useDispatch } from "react-redux";
-
-export default userRestuarant = (paramId) => {
+const useRestuarant = (paramId) => {
   const [resInfo, setResInfo] = useState(null);
   const [fetchFailed, setFetchFailed] = useState(false);
   const dispatch = useDispatch();
@@ -25,3 +24,5 @@ export default userRestuarant = (paramId) => {
   }
   return [resInfo, setResInfo , fetchFailed];
 };
+
+export default userRestuarant 

@@ -1,4 +1,4 @@
-export default resList = [{
+const resList = [{
     id: 1,
     name: "SS"
 },
@@ -14,3 +14,4 @@ export default resList = [{
     id: 4,
     name: "DKJK"
 }]
+export default resList 

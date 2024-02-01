@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Cart from "./Cart";
-export default Header = () => {
+const Header = () => {
   const [showCart, setShowCart] = useState(false);
   const items = useSelector((store) => store.cart.items);
   return (
@@ -54,3 +54,5 @@ export default Header = () => {
     </header>
   );
 };
+
+export default Header 

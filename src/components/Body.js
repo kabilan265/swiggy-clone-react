@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import ShimmerUI from "./ShimmerUI";
 import { Link } from "react-router-dom";
 import Caurosel from "./Caurosel";
-export default Body = () => {
+const Body = () => {
   const [resList, setResList] = useState([]);
   const [filteredList, setfilteredList] = useState([]);
   const [subHeading, setSubHeading] = useState("");
@@ -76,3 +76,5 @@ export default Body = () => {
       </div>
     );
 };
+
+export default Body;
