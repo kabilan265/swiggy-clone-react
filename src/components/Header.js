@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import swiggyLogo from "../../assets/swiggyLogo.jpeg";
 import Cart from "./Cart";
 export default Header = () => {
   const [showCart, setShowCart] = useState(false);
