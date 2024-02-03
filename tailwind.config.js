@@ -12,7 +12,8 @@ module.exports = {
       "accordin-border": "#f1f1f6",
       "accordin-menu-border": "#d3d3d3",
       'blue': "#447fd6",
-      'warning':'red'
+      'warning':'red',
+      'overlay':'rgba(0, 0, 0, 0.568)'
     },
   },
   plugins: [],

@@ -1,6 +1,7 @@
 import RestuarantAccordin from "./RestuarantAccordin";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { idMaker } from "../utils/HelperFunctions";
 const RestuarantCategory = (props) => {
   const { resData, showMenu, setShowIndex } = { ...props };
   const { title, itemCards } = resData?.card?.card;
@@ -11,6 +12,7 @@ const RestuarantCategory = (props) => {
     <div className="pt-5">
       <div
         className="flex items-center justify-between cursor-pointer"
+        id={idMaker(title)}
         onClick={handleClick}
       >
         <h2 className="text-lg font-bold text-card-heading my-4 ">
@@ -27,4 +29,4 @@ const RestuarantCategory = (props) => {
   );
 };
 
-export default RestuarantCategory 
+export default RestuarantCategory;

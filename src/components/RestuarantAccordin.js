@@ -14,7 +14,6 @@ const MenuItem = (props) => {
             className="grid according-wrap pb-10 last:pb-10 border-b-[0.5px] menu-border pt-5 gap-x-4"
           >
             <div>
-              {/*  <span>{item.card.info.itemAttribute.vegClassifier}</span> */}
               <h3 className="text-lg font-semibold text-card-heading">
                 {item.card.info.name}
               </h3>

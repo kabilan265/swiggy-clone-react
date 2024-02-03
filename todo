@@ -1,29 +1,4 @@
-add carousel in home page (use usestate as it uses Diff alogo)
-skelton loading
-Add restuarant details in restuarant screen
-Make responsive
-lazy loading of restuarant
-    /* function sectionFunc(entries) {
-        entries.forEach((e) => {
-            if (e.isIntersecting) {
-                console.log('intersecting')
-            }
-        })
-    }
-    function intersectionPoints() {
-
-        const sectionObj = {
-            root: null,
-            threshold: 1,
-        };
-        const sectionObserver = new IntersectionObserver(sectionFunc, sectionObj);
-        const firstLi = document.querySelector('.caurosel > li:first-child');
-        const lastLi = document.querySelector('.caurosel > li:last-child');
-        const watch = [firstLi, lastLi];
-        watch.forEach((e) => {
-            sectionObserver.observe(e)
-        })
-    }
-    useEffect(() => {
-        intersectionPoints();
-    }, []) */
+Search
+responsive 
+deploy 
+done

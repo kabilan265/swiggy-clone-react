@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { addItem } from "../utils/cartSlice";
 import ShimmerUI from "./ShimmerUI";
@@ -7,6 +7,8 @@ import useRestuarant from "../utils/useRestuarant";
 import RestuarantCategory from "./RestuarantCategory";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import _ from "lodash";
+import { idMaker } from "../utils/HelperFunctions";
+
 import {
   faStar,
   faMotorcycle,
@@ -14,11 +16,22 @@ import {
   faIndianRupee,
 } from "@fortawesome/free-solid-svg-icons";
 import { cartContext } from "../utils/UserContext";
+import BrowseMenu from "./BrowseMenu";
 const restaurant = () => {
   const [showIndex, setShowIndex] = useState(0);
+  const [scrollId, setScrollId] = useState('');
   const { resId } = useParams();
   const [resInfo, setResInfo, fetchFailed] = useRestuarant(resId);
   const dispatch = useDispatch();
+  useEffect(() => {
+   if(scrollId)
+   {
+    const elem = document.body.querySelector(
+      `#${idMaker(scrollId)}`
+    );
+    elem.scrollIntoView({ behavior: "smooth" });
+   }
+  }, [scrollId]);
   function handleCart(item, index, type, action) {
     let findIndex;
     for (let [
@@ -164,8 +177,15 @@ const restaurant = () => {
           );
         })}
       </div>
+      <BrowseMenu
+        menuList={filteredList}
+        setShowIndex={(data,title) => {
+          setShowIndex(data);
+          setScrollId(title)
+        }}
+      />
     </div>
   );
 };
 
-export default restaurant 
+export default restaurant;
